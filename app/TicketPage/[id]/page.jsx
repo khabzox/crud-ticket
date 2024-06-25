@@ -1,7 +1,7 @@
 import TicketForm from "@/components/TickietForm";
 async function getTicketById(id) {
   try {
-    const res = await fetch(`http://localhost:3000/api/Tickets/${id}`, {
+    const res = await fetch(`https://crud-ticket.vercel.app/api/Tickets/${id}`, {
       cache: "no-store",
     });
     if (!res.ok) {

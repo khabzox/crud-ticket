@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 export default function DeleteBlog({ id }) {
   const router = useRouter();
   async function deleteTicket() {
-    const res = await fetch(`http://localhost:3000/api/Tickets/${id}`, {
+    const res = await fetch(`https://crud-ticket.vercel.app/api/Tickets/${id}`, {
       method: "DELETE",
     });
     if (res.ok) {
